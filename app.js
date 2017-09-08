@@ -7,7 +7,7 @@ const controller = require('./controller');
 const templating = require('./templating');
 
 const app = new Koa();
-
+// 判断当前环境是否是production环境
 const isProduction = process.env.NODE_ENV === 'production';
 
 // log request URL:
